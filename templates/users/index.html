@@ -1,0 +1,11 @@
+{% extends 'users/base_index.html' %}
+{% load i18n %}
+
+{% block title %}{{ title }} | {% trans 'DI_login_page' %}{% endblock %}
+
+{% block branding %}
+<h1 id="site-name">{% trans 'DI Login' %}</h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
+
