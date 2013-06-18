@@ -1,0 +1,11 @@
+<html>
+<body>
+  <!-- <fieldset><legend>Add phone details</legend> -->
+    <form action="" method="post">{% csrf_token %}
+    {{ phone_form.as_p }}
+    <input type="submit" value="Submit">
+    </form>
+
+  <!-- </fieldset> -->
+</body>
+</html>
