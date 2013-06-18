@@ -1,11 +1,27 @@
-{% extends 'users/base_index.html' %}
-{% load i18n %}
+{% load staticfiles %}
 
-{% block title %}{{ title }} | {% trans 'DI_login_page' %}{% endblock %}
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static "users/style.css" %}" type="text/css"/>
+    </head>
+    <body id ='all' >
+        <h1> IMS template </h1> 
+        <br style='clear:both;'/>
+        <div id='top'>
+            <div id='left'>
+                <p> &nbsp;Clien request from Phone</p>
+                <a href= {%url "phone" %}> <img src="{% static "users/images/add_phone.png" %}" height="64px" width="64px" /> </a>
+            </div>
+            <div id='right'>
+                <p> &nbsp;Client requst form Chats</p>       
+                <a href= {%url "chat" %}><img src="{% static "users/images/add_chat.png" %}" height="64px" width="64px"/> </a>              
+            </div>
+        </div>
+        <!-- <clear:both> -->
+        <br style='clear:both;'/>
+        <div id='bottom'>
+            <p> &nbsp;Bottom text </p>
+        </div>
 
-{% block branding %}
-<h1 id="site-name">{% trans 'DI Login' %}</h1>
-{% endblock %}
-
-{% block nav-global %}{% endblock %}
-
+    </body>
+</html>

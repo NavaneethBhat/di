@@ -16,7 +16,11 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^user/', views.user_page,name="index"),
+    url(r'^users/', views.user_page,name="index"),
     url(r'^login/', views.user_login,name="login"),
+    url(r'^phone/', views.phone_client,name="phone"),
+    url(r'^chat/', views.chat_client,name="chat"),
+    url(r'^note/', views.note_client,name="note"),
+
 
 )

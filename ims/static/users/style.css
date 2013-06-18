@@ -1,0 +1,43 @@
+/*body
+{
+   color:blue;
+}
+*/
+#left
+{
+    color: blue;
+    float: left;
+    border: 1px;
+    background-color: #C8E2D1;
+    position : relative;
+    left: 30px;
+    width: 450px;
+    height: 250px;
+}
+#right
+{
+    color:blue;
+    float: right;
+    border: 1px;
+    background-color: #C8E2D1;
+    position : relative;
+    right: 30px;
+    width:  450px;
+    height: 250px;
+}
+#bottom
+{
+    color:blue;
+    background-color: #80D3DE;
+    position : relative;
+    left: 30px;
+    width: 930px;
+    height: 400px;
+}
+
+h1
+{
+    color: grey;
+    text-align: center;
+}
+
